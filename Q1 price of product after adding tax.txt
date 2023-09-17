@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    float tax, originalPrice, finalPrice;
+    printf("Enter the tax rate: ");
+    scanf("%f", &tax);
+    printf("Enter the original price: ");
+    scanf("%f", &originalPrice);
+    finalPrice = originalPrice + (originalPrice * tax / 100);
+    printf("The final price after adding tax is: %.2f\n", finalPrice);
+    return 0;
+} 	
